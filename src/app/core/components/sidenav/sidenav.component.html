@@ -1,0 +1,10 @@
+<button type="button" class="close" aria-label="Close" style="float: right; color: #fff" (click)="closeSidenav.emit()">
+  <span aria-hidden="true">&times;</span>
+</button><ul #sidenav>
+  <li [routerLink]="'/'" (click)="closeSidenav.emit()"><span class="sidenav-link">Startseite</span></li>
+  <li (click)="closeSidenav.emit()"><span class="sidenav-link">Aktuelles</span></li>
+  <li [routerLink]="'/sign-in'" (click)="closeSidenav.emit()"><span class="sidenav-link">Anmeldeformular</span></li>
+  <li (click)="closeSidenav.emit()"><span class="sidenav-link">Teachings</span></li>
+  <li (click)="closeSidenav.emit()"><span class="sidenav-link">MSP deutschlandweit</span></li>
+  <li (click)="closeSidenav.emit()"><span class="sidenav-link">Nützliche Links</span></li>
+</ul>
