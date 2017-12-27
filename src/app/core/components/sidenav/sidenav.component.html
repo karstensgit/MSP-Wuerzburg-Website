@@ -1,10 +1,10 @@
 <button type="button" class="close" aria-label="Close" style="float: right; padding-right: 5px" (click)="closeSidenav.emit()">
-  <i class="fa fa-times" style="color: white" aria-hidden="true"></i>
+  <i class="fa fa-times" style="color: white; cursor: default" aria-hidden="true"></i>
 </button><ul #sidenav>
   <li [routerLink]="'/'" (click)="closeSidenav.emit()"><span class="sidenav-link">Startseite</span></li>
-  <li (click)="closeSidenav.emit()"><span class="sidenav-link">Aktuelles</span></li>
+  <li [routerLink]="'/news'" (click)="closeSidenav.emit()"><span class="sidenav-link">Aktuelles</span></li>
   <li [routerLink]="'/sign-in'" (click)="closeSidenav.emit()"><span class="sidenav-link">Anmeldeformular</span></li>
-  <li (click)="closeSidenav.emit()"><span class="sidenav-link">Teachings</span></li>
-  <li (click)="closeSidenav.emit()"><span class="sidenav-link">MSP deutschlandweit</span></li>
-  <li (click)="closeSidenav.emit()"><span class="sidenav-link">Nützliche Links</span></li>
+  <li [routerLink]="'/teachings'" (click)="closeSidenav.emit()"><span class="sidenav-link">Teachings</span></li>
+  <li [routerLink]="'/msp-general'" (click)="closeSidenav.emit()"><span class="sidenav-link">MSP deutschlandweit</span></li>
+  <li [routerLink]="'/useful'" (click)="closeSidenav.emit()"><span class="sidenav-link">Nützliche Links</span></li>
 </ul>
