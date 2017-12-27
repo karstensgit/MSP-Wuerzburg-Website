@@ -1,7 +1,7 @@
 <header>
-	<app-toolbar (toggleSidenav)="toggleMenu()"></app-toolbar>
+	<app-toolbar (toggleSidenav)="toggleMenu()" style="margin-bottom: 80px"></app-toolbar>
 </header>
 <app-sidenav [@slideInOut]="menuState" (closeSidenav)="toggleMenu()"></app-sidenav>
-<div id="main" (click)="closeMenu()">
+<div (click)="closeMenu()">
 <router-outlet></router-outlet>
 </div>
