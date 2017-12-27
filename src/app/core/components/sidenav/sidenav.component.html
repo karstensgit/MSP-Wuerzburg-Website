@@ -1,5 +1,5 @@
-<button type="button" class="close" aria-label="Close" style="float: right; color: #fff" (click)="closeSidenav.emit()">
-  <span aria-hidden="true">&times;</span>
+<button type="button" class="close" aria-label="Close" style="float: right; padding-right: 5px" (click)="closeSidenav.emit()">
+  <i class="fa fa-times" style="color: white" aria-hidden="true"></i>
 </button><ul #sidenav>
   <li [routerLink]="'/'" (click)="closeSidenav.emit()"><span class="sidenav-link">Startseite</span></li>
   <li (click)="closeSidenav.emit()"><span class="sidenav-link">Aktuelles</span></li>
